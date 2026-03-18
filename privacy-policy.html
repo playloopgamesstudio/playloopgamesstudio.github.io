@@ -6,12 +6,13 @@
   <meta name="theme-color" content="#070b17" />
   <meta name="description" content="Privacy Policy for Playloop Games Studio" />
   <title>Playloop Games Studio - Privacy Policy</title>
+
   <style>
     :root {
       --bg: #060816;
-      --bg-soft: rgba(15, 23, 42, 0.72);
+      --bg-soft: rgba(15, 23, 42, 0.78);
       --card: rgba(13, 18, 38, 0.82);
-      --line: rgba(148, 163, 184, 0.16);
+      --line: rgba(148, 163, 184, 0.14);
       --text: #edf4ff;
       --muted: #9fb0cb;
       --primary: #6ee7ff;
@@ -22,6 +23,8 @@
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html {
@@ -29,7 +32,6 @@
     }
 
     body {
-      margin: 0;
       font-family: Inter, Arial, sans-serif;
       color: var(--text);
       background:
@@ -79,9 +81,9 @@
     .navbar {
       position: sticky;
       top: 0;
-      z-index: 20;
-      backdrop-filter: blur(18px);
-      background: rgba(5, 8, 22, 0.58);
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(5, 8, 22, 0.6);
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
@@ -103,8 +105,8 @@
     }
 
     .brand-badge {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       border-radius: 14px;
       display: grid;
       place-items: center;
@@ -112,6 +114,13 @@
       background: linear-gradient(135deg, rgba(110,231,255,0.24), rgba(139,92,246,0.3));
       border: 1px solid rgba(255,255,255,0.12);
       box-shadow: 0 0 40px rgba(110, 231, 255, 0.18);
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 12px;
     }
 
     .nav-links {
@@ -125,6 +134,7 @@
       padding: 10px 14px;
       border-radius: 12px;
       transition: 0.25s ease;
+      font-weight: 600;
     }
 
     .nav-links a:hover {
@@ -190,7 +200,7 @@
     }
 
     .section {
-      margin-top: 26px;
+      margin-top: 22px;
       padding: 22px;
       border-radius: 20px;
       background: rgba(255,255,255,0.03);
@@ -198,8 +208,8 @@
     }
 
     .section h2 {
-      margin: 0 0 10px;
-      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
       color: var(--primary);
     }
 
@@ -209,17 +219,12 @@
     }
 
     ul {
-      margin: 10px 0 0;
+      margin-top: 10px;
       padding-left: 20px;
     }
 
     li {
       margin-bottom: 8px;
-    }
-
-    .highlight {
-      color: #ffffff;
-      font-weight: 700;
     }
 
     .contact-box {
@@ -246,7 +251,7 @@
       border-radius: 14px;
       border: 1px solid transparent;
       font-weight: 700;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+      transition: 0.25s ease;
       cursor: pointer;
     }
 
@@ -280,6 +285,11 @@
     }
 
     @media (max-width: 640px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       .policy-card {
         padding: 22px;
       }
@@ -308,16 +318,15 @@
         <div class="brand-badge">🎮</div>
         <div>
           <div>Playloop</div>
-          <small style="color: var(--muted); font-weight: 600;">Games Studio</small>
+          <small>Games Studio</small>
         </div>
       </a>
 
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="index.html#features">Features</a>
         <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
         <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="mailto:playloopgamesstudio@gmail.com">Contact</a>
       </div>
     </div>
   </nav>
@@ -335,7 +344,7 @@
   <div class="container">
     <div class="policy-card">
       <p class="intro">
-        This Privacy Policy explains how <span class="highlight">Playloop Games Studio</span> collects, uses, and protects information when you use our games and services.
+        This Privacy Policy explains how Playloop Games Studio collects, uses, and protects information when you use our games and services.
       </p>
 
       <div class="section">
@@ -352,42 +361,36 @@
         <h2>2. Third-Party Services</h2>
         <p>Our games may use third-party tools and services, including:</p>
         <ul>
-          <li><strong>Google AdMob</strong> for showing advertisements</li>
-          <li><strong>Google Play Billing</strong> for in-app purchases</li>
+          <li>Google AdMob for advertisements</li>
+          <li>Google Play Billing for in-app purchases</li>
         </ul>
-        <p>
-          These services may collect and process data according to their own privacy policies.
-        </p>
-        <p>
-          <a href="https://policies.google.com/privacy" target="_blank">Read Google Privacy Policy</a>
-        </p>
       </div>
 
       <div class="section">
         <h2>3. In-App Purchases</h2>
         <p>
-          If our game offers in-app purchases, all payments are securely processed by the Google Play Store. We do not store or access your payment card or banking information.
+          If our game offers in-app purchases, all payments are securely processed by the Google Play Store. We do not store or access your card or banking details.
         </p>
       </div>
 
       <div class="section">
         <h2>4. Advertising</h2>
         <p>
-          Our games may display ads provided by third-party advertising partners such as Google AdMob. These partners may use device information to provide better ad performance and relevant advertising.
+          Our games may display ads provided by third-party partners such as Google AdMob. These partners may use device information to improve ad delivery and performance.
         </p>
       </div>
 
       <div class="section">
         <h2>5. Children's Privacy</h2>
         <p>
-          We do not knowingly collect personal data from children under the age of 13. If you believe that a child has provided personal information through our game, please contact us and we will take appropriate action.
+          We do not knowingly collect personal data from children under the age of 13. If you believe that a child has provided personal information through our game, please contact us.
         </p>
       </div>
 
       <div class="section">
         <h2>6. Data Security</h2>
         <p>
-          We take reasonable steps to protect users and provide a safe experience. Even so, no method of electronic storage or transmission is completely secure.
+          We take reasonable steps to protect users and provide a safe experience. However, no method of transmission or storage is completely secure.
         </p>
       </div>
 
@@ -401,7 +404,7 @@
       <div class="section">
         <h2>8. Contact Us</h2>
         <p>
-          If you have any questions about this Privacy Policy, you can contact us at:
+          If you have any questions about this Privacy Policy, contact us at:
         </p>
 
         <div class="contact-box">
@@ -410,7 +413,7 @@
       </div>
 
       <div class="button-group">
-        <a href="index.html" class="btn btn-primary">Home</a>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
         <a href="mailto:playloopgamesstudio@gmail.com" class="btn btn-secondary">Contact Us</a>
       </div>
 
